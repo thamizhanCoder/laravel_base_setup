@@ -1,0 +1,913 @@
+{
+	"variables": [],
+	"info": {
+		"name": "basic laravel collection",
+		"_postman_id": "34b5a327-5147-a799-f3ab-eef8972d9ea9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AP",
+			"description": "",
+			"item": [
+				{
+					"name": "admin login",
+					"description": "",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"url": "{{host}}login",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "admin@technogenesis.in",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "mobile",
+											"value": "97151413109",
+											"description": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"description": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "userupdateFcmToken",
+							"request": {
+								"url": "{{host}}userupdateFcmToken",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "kamesh",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"description": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"description": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"description": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "forget",
+							"request": {
+								"url": "{{host}}forget",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "admin@technogenesis.in",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "reset",
+							"request": {
+								"url": "{{host}}reset",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "a77c6adf309dcb2e749bb1284242ed16",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"url": "{{host}}view/1",
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "changepassword",
+							"request": {
+								"url": "{{host}}changepassword",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "old_password",
+											"value": "123456",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "new_password",
+											"value": "1234567",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "anjugaselvi@technogenesis.in",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "logoutActivityLog",
+							"request": {
+								"url": "{{host}}logoutActivityLog",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "User",
+					"description": "",
+					"item": [
+						{
+							"name": "user/create",
+							"request": {
+								"url": "{{host}}user/create",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "acl_role_id",
+											"value": "1",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "muthumani",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "aswins@technogenesis.in",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "mobile_no",
+											"value": "9090900977",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "user/update",
+							"request": {
+								"url": "{{host}}user/update",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									},
+									{
+										"key": "",
+										"value": "",
+										"description": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "acl_role_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "kamesh",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "kamesh@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "mobile_no",
+											"value": "90909090",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "acl_user_id",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "user/list",
+							"request": {
+								"url": {
+									"raw": "{{host}}user/list?limit=&offset=&searchWith=&sortByKey=&sortByType=",
+									"host": [
+										"{{host}}user"
+									],
+									"path": [
+										"list"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "",
+											"equals": false,
+											"description": ""
+										},
+										{
+											"key": "offset",
+											"value": "",
+											"equals": false,
+											"description": ""
+										},
+										{
+											"key": "searchWith",
+											"value": "",
+											"equals": false,
+											"description": ""
+										},
+										{
+											"key": "sortByKey",
+											"value": "",
+											"equals": false,
+											"description": ""
+										},
+										{
+											"key": "sortByType",
+											"value": "",
+											"equals": false,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "user/view",
+							"request": {
+								"url": "{{host}}user/view/1",
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "user/status",
+							"request": {
+								"url": "{{host}}user/status",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "[1]",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "user/delete",
+							"request": {
+								"url": "{{host}}user/delete",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Role",
+					"description": "",
+					"item": [
+						{
+							"name": "role/create",
+							"request": {
+								"url": "{{host}}role/create",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "role_name",
+											"value": "software testing",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "role/update",
+							"request": {
+								"url": "{{host}}role/update",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									},
+									{
+										"key": "",
+										"value": "",
+										"description": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "acl_role_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "role_name",
+											"value": "dealer",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"description": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "role/list",
+							"request": {
+								"url": {
+									"raw": "{{host}}role/list?limit=&offset=&searchWith=&sortByKey=&sortByType=",
+									"host": [
+										"{{host}}role"
+									],
+									"path": [
+										"list"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "",
+											"equals": false,
+											"description": ""
+										},
+										{
+											"key": "offset",
+											"value": "",
+											"equals": false,
+											"description": ""
+										},
+										{
+											"key": "searchWith",
+											"value": "",
+											"equals": false,
+											"description": ""
+										},
+										{
+											"key": "sortByKey",
+											"value": "",
+											"equals": false,
+											"description": ""
+										},
+										{
+											"key": "sortByType",
+											"value": "",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "roles/activelist",
+							"request": {
+								"url": "{{host}}roles/activelist",
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "role/view",
+							"request": {
+								"url": "{{host}}role/view/1",
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "role/status",
+							"request": {
+								"url": "{{host}}role/status",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "[1]",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "role/delete",
+							"request": {
+								"url": "{{host}}role/delete",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "[1]",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Role permission",
+					"description": "",
+					"item": [
+						{
+							"name": "rolepermission/update",
+							"request": {
+								"url": "{{host}}rolepermission/update",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "role_menu_id",
+											"value": "[\n   {\n      \"acl_menu_id\":\"2\",\n      \"acl_menu_module_id\":1\n   },\n   {\n      \"acl_menu_id\":\"5\",\n      \"acl_menu_module_id\":1\n   }\n]",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "acl_role_id",
+											"value": "1",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "rolepermission/list",
+							"request": {
+								"url": {
+									"raw": "{{host}}rolepermission/list?role_id=1",
+									"host": [
+										"{{host}}rolepermission"
+									],
+									"path": [
+										"list"
+									],
+									"query": [
+										{
+											"key": "role_id",
+											"value": "1",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Activity Log",
+					"description": "",
+					"item": [
+						{
+							"name": "Logactivity list",
+							"request": {
+								"url": {
+									"raw": "{{host}}logactivity/list?limit=&offset=&filterType=[]&from_date=&to_date=",
+									"host": [
+										"{{host}}logactivity"
+									],
+									"path": [
+										"list"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "offset",
+											"value": "",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "filterType",
+											"value": "[]",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "from_date",
+											"value": "",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "to_date",
+											"value": "",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Logactivity type list",
+							"request": {
+								"url": "{{host}}logactivitytype/list",
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}
